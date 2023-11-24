@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    padding: 0.5rem;
+}
+h1{
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+
+}
+.dataUser{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+img{
+    width: 50%;
+    height: 100%;
+}
+.userName{
+    font-size: 40px;
+}
+.userEmail{
+    font-size: 20px;
+}
+.userName , .userEmail{
+    margin-bottom: 15px ;
+}
+.linkPro{
+    text-decoration: none;
+    background-color: rgb(40, 148, 211);
+    color: #fff;
+    border-radius: 6%;
+    -webkit-border-radius: 6%;
+    -moz-border-radius: 6%;
+    -ms-border-radius: 6%;
+    -o-border-radius: 6%;
+    font-size: 20px;
+    padding: 5px;
+    width: 70%;
+}
+@media (max-width:560px){
+    .dataUser{
+        flex-direction: column;
+    }
+    .userName{
+        font-size: 27px;
+    }
+    .userEmail{
+        font-size: 16px;
+    }
+}

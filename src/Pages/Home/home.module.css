@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    padding: 0.5rem;
+}
+h1{
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.userCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #e2d9d9;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+}
+.userCard img{
+    width: 100%;
+    flex: 1;
+    object-fit: cover;
+}
+.dataUser{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px;
+}
+h2 , p{
+    margin-bottom: 5px ;
+}
+.Link{
+    text-decoration: none;
+    background-color: rgb(40, 148, 211);
+    color: #fff;
+    border-radius: 6%;
+    -webkit-border-radius: 6%;
+    -moz-border-radius: 6%;
+    -ms-border-radius: 6%;
+    -o-border-radius: 6%;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    width: 80%;
+}
+@media (max-width:380px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h2,p{
+        font-size: 10px;
+    }
+    .Link{
+        font-size: 12px;
+    }
+}
+@media (min-width:381px) and (max-width:600px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h2,p{
+        font-size: 13px;
+    }
+    .Link{
+        font-size: 14px;
+    }
+}
+@media (min-width:600px) and (max-width:800px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h2,p{
+        font-size: 15px;
+    }
+    .Link{
+        font-size: 17px;
+    }
+}
